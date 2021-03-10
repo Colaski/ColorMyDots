@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Colors</string>
+		</dict>
+        <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>SparkColourPickerCell</string>
+                <key>libsparkcolourpicker</key>
+                <dict>
+                    <key>defaults</key>
+                    <string>com.colaski.colormydotspref</string>
+                    <key>fallback</key>
+                    <string>#ffffff</string>
+                    <key>alpha</key>
+                    <true/>
+                </dict>
+                <key>label</key>
+                <string>Current Page Dot Color</string>
+                <key>key</key>
+                <string>currentColor</string>
+                <key>PostNotification</key>
+                <string>com.colaski.colormydotspref/saved</string>
+        </dict>
+        <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>SparkColourPickerCell</string>
+                <key>libsparkcolourpicker</key>
+                <dict>
+                    <key>defaults</key>
+                    <string>com.colaski.colormydotspref</string>
+                    <key>fallback</key>
+                    <string>#7d7d7d</string>
+                    <key>alpha</key>
+                    <true/>
+                </dict>
+                <key>label</key>
+                <string>Other Pages Dot Color</string>
+                <key>key</key>
+                <string>otherColor</string>
+                <key>PostNotification</key>
+                <string>com.colaski.colormydotspref/saved</string>
+        </dict>
+	</array>
+	<key>title</key>
+	<string>ColorMyDots</string>
+</dict>
+</plist>
