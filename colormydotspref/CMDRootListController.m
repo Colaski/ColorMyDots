@@ -9,7 +9,7 @@
 
 	return _specifiers;
 }
-
+//Thanks to Chris(Simalary) for this snippit
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:@selector(restartSpringBoard:)];

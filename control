@@ -2,7 +2,7 @@ Package: com.colaski.colormydots
 Name: ColorMyDots
 Version: 1.0.0
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Simple tweak that allows changing the color of the dots on springboard
 Maintainer: Colaski
 Author: Colaski
 Section: Tweaks
