@@ -4,40 +4,29 @@
 
 
 // Preference Vars
-BOOL enabled;
 UIColor *currentColor;
 UIColor *otherColor;
 
 
 
 %hook UIPageControl
-
-
 //The currently selected page
 -(UIColor *)currentPageIndicatorTintColor {
-
         return currentColor;
-
 }
 
 //The non-selected pages
 -(UIColor *)pageIndicatorTintColor {
-
         return otherColor;
 }
-
 %end
 
-
-
-//Preferneces loader
+//Prefereneces loader
 static void loadPrefs() {
     NSMutableDictionary *preferences = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.colaski.colormydotspref.plist"];
 
-    enabled = [preferences objectForKey:@"enabled"] ? [[preferences objectForKey:@"enabled"] boolValue] : YES;
     currentColor = [SparkColourPickerUtils colourWithString: [preferences objectForKey:@"currentColor"] withFallback: @"#ffffff"];
     otherColor = [SparkColourPickerUtils colourWithString: [preferences objectForKey:@"otherColor"] withFallback: @"#7d7d7d"];
-    
 }
 
 %ctor {
